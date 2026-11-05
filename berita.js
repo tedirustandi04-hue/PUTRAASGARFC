@@ -1,7 +1,7 @@
 (async () => {
   const root = document.getElementById("berita-root"); if (!root) return;
   const { getJSON, esc, fmtTanggal, newsCard } = window.PAFC;
-  let data; try { data = (await getJSON("data/berita.json")).berita; } catch (e) { root.innerHTML = `<p class="notice">Berita gagal dimuat. Jalankan situs melalui server (lihat README).</p>`; return; }
+  let data; try { data = (await getJSON("berita.json")).berita; } catch (e) { root.innerHTML = `<p class="notice">Berita gagal dimuat. Jalankan situs melalui server (lihat README).</p>`; return; }
   const slug = new URLSearchParams(location.search).get("artikel");
   if (slug) {
     const n = data.find(x => x.slug === slug);

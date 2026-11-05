@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header id="site-header"></header>
@@ -26,8 +26,8 @@
 </main>
 <div id="site-footer"></div>
 <script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
-<script src="assets/js/main.js"></script>
-<script>(async()=>{const {getJSON,esc}=window.PAFC;try{const d=(await getJSON('data/prestasi.json')).prestasi;
+<script src="main.js"></script>
+<script>(async()=>{const {getJSON,esc}=window.PAFC;try{const d=(await getJSON('prestasi.json')).prestasi;
 const ic={Juara:'trophy','Runner-up':'medal',Seleksi:'users'};
 document.getElementById('trofi').innerHTML=d.map(p=>`<div class="card p-6 text-center border-t-4 !border-t-[#D4AF37]"><i data-lucide="${ic[p.kategori]||'award'}" class="mx-auto w-12 h-12 text-[#D4AF37]"></i><span class="tag mt-3">${esc(p.kategori)}</span><h3 class="text-xl mt-2">${esc(p.judul)}</h3><p class="text-sm text-gray-600 mt-1">${p.tahun}</p></div>`).join('');
 document.getElementById('timeline').innerHTML=d.map(p=>`<li><p class="font-bold text-[#B91C1C]">${p.tahun}</p><h3 class="text-xl">${esc(p.judul)}</h3><p class="text-gray-600">${esc(p.keterangan)}</p></li>`).join('');

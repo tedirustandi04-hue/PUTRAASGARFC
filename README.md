@@ -24,7 +24,7 @@ Formulir **belum mengirim data** sampai dikonfigurasi, dan situs menampilkan pem
 Catatan: pengiriman memakai `no-cors`, sehingga browser tidak bisa memastikan keberhasilan; periksa tab Responses di Google Form.
 
 ## Konten yang perlu dilengkapi pengurus
-- Foto/video asli (`assets/images/`, `data/galeri.json`); logo resmi klub (belum ada, saat ini hanya tulisan nama).
+- Foto/video asli (`gambar (letakkan di folder utama)`, `data/galeri.json`); logo resmi klub (belum ada, saat ini hanya tulisan nama).
 - Sejarah rinci, visi-misi, struktur organisasi, staf pelatih (profil.html).
 - Kontak resmi (kontak.html). Artikel di `data/berita.json` berstatus draf.
 - Materi program akademi (akademi.html) bersifat garis besar; sesuaikan dengan kurikulum klub.

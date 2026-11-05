@@ -47,7 +47,7 @@ function renderLayout() {
 async function initBeranda() {
   if (!document.getElementById("home-stats")) return;
   try {
-    const p = await getJSON("data/prestasi.json");
+    const p = await getJSON("prestasi.json");
     document.getElementById("home-stats").innerHTML = p.statistik.map(s =>
       `<div><div class="stat" data-n="${s.nilai}" ${s.tanpaHitung ? 'data-static="1"' : ""}>${s.nilai}</div><p class="mt-2 text-gray-300">${esc(s.label)}</p></div>`).join("");
     document.querySelectorAll("[data-n]:not([data-static])").forEach(el => {
@@ -56,11 +56,11 @@ async function initBeranda() {
     });
   } catch (e) { console.error(e); }
   try {
-    const b = (await getJSON("data/berita.json")).berita.slice(0, 3);
+    const b = (await getJSON("berita.json")).berita.slice(0, 3);
     document.getElementById("home-news").innerHTML = b.map(newsCard).join("");
   } catch (e) { console.error(e); }
   try {
-    const g = (await getJSON("data/galeri.json")).foto.slice(0, 4);
+    const g = (await getJSON("galeri.json")).foto.slice(0, 4);
     document.getElementById("home-gallery").innerHTML = g.map(f => f.src
       ? `<a href="galeri.html"><img src="${esc(f.src)}" alt="${esc(f.alt)}" loading="lazy" class="rounded w-full aspect-square object-cover"></a>`
       : `<a href="galeri.html" class="ph rounded !aspect-square"><i data-lucide="image"></i>${esc(f.judul)}</a>`).join("");

@@ -1,7 +1,7 @@
 (async () => {
   const grid = document.getElementById("foto-grid"); if (!grid) return;
   const { getJSON, esc } = window.PAFC;
-  let d; try { d = await getJSON("data/galeri.json"); } catch (e) { grid.innerHTML = `<p class="notice">Galeri gagal dimuat. Jalankan situs melalui server (lihat README).</p>`; return; }
+  let d; try { d = await getJSON("galeri.json"); } catch (e) { grid.innerHTML = `<p class="notice">Galeri gagal dimuat. Jalankan situs melalui server (lihat README).</p>`; return; }
   let items = d.foto, idx = 0;
   grid.innerHTML = items.map((f, i) => `<button class="relative overflow-hidden rounded group text-left" data-i="${i}" aria-label="Buka foto: ${esc(f.judul)}">
     ${f.src ? `<img src="${esc(f.src)}" alt="${esc(f.alt)}" loading="lazy" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition">` : `<div class="ph !aspect-[4/3]"><i data-lucide="image"></i>Foto belum tersedia</div>`}
