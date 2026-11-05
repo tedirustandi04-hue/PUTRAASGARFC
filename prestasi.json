@@ -1,0 +1,14 @@
+{
+  "prestasi": [
+    {"tahun": 2026, "judul": "Juara Piala Soeratin U15 Garut", "kategori": "Juara", "keterangan": "Juara kompetisi Piala Soeratin U15 tingkat Kabupaten Garut."},
+    {"tahun": 2026, "judul": "Runner-up Piala Soeratin U15 Priangan Timur", "kategori": "Runner-up", "keterangan": "Runner-up kompetisi Piala Soeratin U15 tingkat Priangan Timur."},
+    {"tahun": 2026, "judul": "9 Pemain Terpilih Persigar", "kategori": "Seleksi", "keterangan": "Sembilan pemain Putra Asgar FC terpilih memperkuat Persigar."},
+    {"tahun": 2026, "judul": "1 Pemain Terpilih EPA Persik Kediri", "kategori": "Seleksi", "keterangan": "Satu pemain Putra Asgar FC terpilih masuk EPA Persik Kediri."}
+  ],
+  "statistik": [
+    {"nilai": 2018, "label": "Tahun berdiri", "tanpaHitung": true},
+    {"nilai": 2, "label": "Podium Piala Soeratin U15 2026"},
+    {"nilai": 9, "label": "Pemain terpilih Persigar"},
+    {"nilai": 1, "label": "Pemain terpilih EPA Persik Kediri"}
+  ]
+}

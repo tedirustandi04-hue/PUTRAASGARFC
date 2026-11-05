@@ -1,0 +1,15 @@
+{
+  "catatan": "Isi 'src' dengan path foto asli (mis. assets/images/foto-1.jpg) dan 'youtubeId' untuk video. Jika kosong, tampil placeholder.",
+  "foto": [
+    {"judul": "Sesi latihan U10–U11", "kategori": "Latihan", "src": "", "alt": "Sesi latihan"},
+    {"judul": "Pertandingan Piala Soeratin U15", "kategori": "Pertandingan", "src": "", "alt": "Pertandingan"},
+    {"judul": "Penyerahan trofi juara", "kategori": "Prestasi", "src": "", "alt": "Trofi juara"},
+    {"judul": "Latihan U6–U9", "kategori": "Latihan", "src": "", "alt": "Latihan usia dini"},
+    {"judul": "Tim U15 Putra Asgar FC", "kategori": "Tim", "src": "", "alt": "Tim U15"},
+    {"judul": "Kebersamaan Laskar Domba Sakti", "kategori": "Tim", "src": "", "alt": "Kebersamaan tim"}
+  ],
+  "video": [
+    {"judul": "Cuplikan pertandingan", "youtubeId": ""},
+    {"judul": "Profil akademi", "youtubeId": ""}
+  ]
+}

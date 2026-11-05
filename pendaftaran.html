@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pendaftaran Online – Putra Asgar FC</title>
+<meta name="description" content="Daftarkan putra Anda di akademi sepak bola Putra Asgar FC Garut melalui formulir online.">
+<meta property="og:title" content="Pendaftaran Online – Putra Asgar FC">
+<meta property="og:description" content="Daftarkan putra Anda di akademi sepak bola Putra Asgar FC Garut melalui formulir online.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="id_ID">
+<meta name="theme-color" content="#B91C1C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23B91C1C'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Impact' fill='%23D4AF37' text-anchor='middle'%3EPA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header id="site-header"></header>
+<main id="konten">
+<section class="page-head"><div class="container"><h1>Pendaftaran Online</h1><p class="mt-3 text-gray-300 max-w-2xl">Bergabunglah menjadi bagian dari Laskar Domba Sakti.</p></div></section>
+<section class="section"><div class="container max-w-3xl"><div id="form-status" class="mb-6"></div>
+<form id="form-daftar" class="grid gap-5 card p-6 md:p-8" novalidate>
+<div class="field"><label for="nama">Nama lengkap siswa *</label><input id="nama" name="nama" type="text" required autocomplete="name"><p class="err" id="err-nama"></p></div>
+<div class="grid sm:grid-cols-2 gap-5"><div class="field"><label for="lahir">Tanggal lahir *</label><input id="lahir" name="lahir" type="date" required ><p class="err" id="err-lahir"></p></div>
+<div class="field"><label for="kategori">Kategori usia *</label><select id="kategori" name="kategori" required><option value="">Pilih kategori</option><option>U6–U9</option><option>U10–U11</option><option>U12–U13</option><option>U14–U15</option></select><p class="err" id="err-kategori"></p></div></div>
+<div class="field"><label for="gender">Jenis kelamin *</label><select id="gender" name="gender" required><option value="">Pilih</option><option>Laki-laki</option><option>Perempuan</option></select><p class="err" id="err-gender"></p></div>
+<div class="field"><label for="wali">Nama orang tua / wali *</label><input id="wali" name="wali" type="text" required ><p class="err" id="err-wali"></p></div>
+<div class="field"><label for="wa">Nomor WhatsApp *</label><input id="wa" name="wa" type="tel" required inputmode="tel" placeholder="08123456789" autocomplete="tel"><p class="err" id="err-wa"></p></div>
+<div class="field"><label for="alamat">Alamat *</label><textarea id="alamat" name="alamat" rows="3" required></textarea><p class="err" id="err-alamat"></p></div>
+<div class="field"><label for="pengalaman">Pengalaman sepak bola sebelumnya</label><textarea id="pengalaman" name="pengalaman" rows="3" placeholder="Contoh: pernah bergabung di SSB lain, belum pernah, dll."></textarea></div>
+<div class="field"><label class="flex gap-3 items-start font-normal"><input type="checkbox" id="setuju" name="setuju" required class="!w-5 !h-5 mt-1"><span>Saya selaku orang tua/wali menyetujui anak saya mengikuti pembinaan di Putra Asgar FC dan data ini digunakan untuk keperluan pendaftaran. *</span></label><p class="err" id="err-setuju"></p></div>
+<button type="submit" class="btn btn-red justify-center">Kirim Pendaftaran</button></form></div></section>
+</main>
+<div id="site-footer"></div>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
